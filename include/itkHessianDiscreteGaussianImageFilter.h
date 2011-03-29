@@ -1,7 +1,7 @@
 #ifndef __itkHessianDiscreteGaussianImageFilter_h
 #define __itkHessianDiscreteGaussianImageFilter_h
 
-#include "itkRecursiveGaussianImageFilter.h"
+#include "itkImagetoImageFilter.h"
 #include "itkSymmetricSecondRankTensor.h"
 #include "itkPixelTraits.h"
 

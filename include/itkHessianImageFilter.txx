@@ -11,8 +11,6 @@
 #include "itkProgressReporter.h"
 #include "itkProgressAccumulator.h"
 
-#include "vnl/vnl_trace.h"
-
 namespace itk
 {
 namespace Local

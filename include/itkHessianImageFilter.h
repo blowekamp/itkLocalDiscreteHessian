@@ -3,8 +3,7 @@
 
 #include "itkImage.h"
 #include "itkImageToImageFilter.h"
-#include "itkHessianRecursiveGaussianImageFilter.h"
-#include "itkGradientRecursiveGaussianImageFilter.h"
+#include "itkSymmetricSecondRankTensor.h"
 
 namespace itk
 {
