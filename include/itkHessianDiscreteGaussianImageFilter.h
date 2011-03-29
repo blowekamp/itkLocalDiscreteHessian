@@ -11,7 +11,22 @@ namespace itk
 namespace Local
 {
 
-// on the defaults of template parameters
+
+/**
+ * \class HessianDiscreteGaussianImageFilter
+ * \brief Convolves the image with a discrete Gaussian kernel then
+ * performs central differences.
+ *
+ * This filter is a composite filter of the
+ * DiscreteGaussianImageFilter and the HessianImageFilter.
+ *
+ * The additional feature added is the normalization across scale.
+ *
+ * THIS FILTER IS NOT IMPLEMENTED WITH DISCRETE GAUSSIAN FILTER YET
+ *
+ * \ingroup GradientFilters
+ * \ingroup Streamed
+ */
 template< typename TInputImage,
           typename TOutputImage = Image< SymmetricSecondRankTensor<
                                            ITK_TYPENAME NumericTraits< ITK_TYPENAME TInputImage::PixelType >::RealType,
@@ -51,7 +66,10 @@ public:
   itkSetMacro( Sigma, double );
   itkGetConstMacro( Sigma, double );
 
-  /** Define which normalization factor will be used for the Gaussian */
+  /** Define if scale-space normalization factor will be used
+   *
+   *  \sa  RecursiveGaussianImageFilter::SetNormalizeAcrossScale
+   */
   itkSetMacro( NormalizeAcrossScale, bool );
   itkGetConstMacro( NormalizeAcrossScale, bool );
   itkBooleanMacro( NormalizeAcrossScale );

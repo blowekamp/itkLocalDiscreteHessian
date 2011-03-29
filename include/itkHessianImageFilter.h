@@ -11,9 +11,11 @@ namespace Local
 {
 
 /**
- * \class t
+ * \class HessianImageFilter
+ * \brief Computes the Hessian matrix by central differences
  *
- * \todo fix me
+ * \ingroup GradientFilters
+ * \ingroup Streamed
  */
 template <typename TInputImage,
           typename TOutputImage = Image< SymmetricSecondRankTensor<

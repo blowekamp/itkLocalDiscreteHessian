@@ -11,7 +11,20 @@ namespace itk
 namespace Local
 {
 
-// on the defaults of template parameters
+
+/**
+ * \class DiscreteHessianRecursiveGaussianImageFilter
+ * \brief Preforms an approximation of convolution of the image with a
+ * Gaussian kernel by a recursive algorithm then performs central
+ * differences.
+ *
+ * This filter is a composite filter of the
+ * RecursiveGaussianImageFilter and the HessianImageFilter.
+ *
+ * The additional feature added is the normalization across scale.
+ *
+ * \ingroup GradientFilters
+ */
 template< typename TInputImage,
           typename TOutputImage = Image< SymmetricSecondRankTensor<
                                            ITK_TYPENAME NumericTraits< ITK_TYPENAME TInputImage::PixelType >::RealType,
