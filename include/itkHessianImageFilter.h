@@ -16,6 +16,7 @@ namespace Local
  *
  * \ingroup GradientFilters
  * \ingroup Streamed
+ * \ingroup ITK-DiscreteHessian
  */
 template <typename TInputImage,
           typename TOutputImage = Image< SymmetricSecondRankTensor<
