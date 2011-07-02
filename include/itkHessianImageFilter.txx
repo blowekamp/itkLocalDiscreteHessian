@@ -90,7 +90,7 @@ template <typename TInputImage, typename TOutputImage >
 void
 HessianImageFilter<TInputImage,TOutputImage>
 ::ThreadedGenerateData(const OutputImageRegionType& outputRegionForThread,
-                       int threadId)
+                       ThreadIdType threadId)
 {
   ProgressReporter progress(this, threadId, outputRegionForThread.GetNumberOfPixels(), 100, 0.5, 0.5);
 
