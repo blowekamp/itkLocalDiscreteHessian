@@ -1,1 +1,17 @@
-itk_module(ITK-DiscreteHessian DEPENDS ITK-ImageFilterBase ITK-Smoothing TEST_DEPENDS ITK-TestKernel)
+
+#if ( CMAKE_MAJOR_VERSION >= 2 AND CMAKE_MINOR_VERSION >= 8 AND CMAKE_PATCH_VERSION >= 4 )
+#  file( READ "${CMAKE_CURRENT_LIST_DIR}" DOCUMENTATION )
+#else()
+  FILE( TO_CMAKE_PATH "${CMAKE_CURRENT_LIST_FILE}" MY_CURENT_DIR )
+  file( READ "${MY_CURENT_DIR}" DOCUMENTATION )
+#endif ()
+
+itk_module(ITK-DiscreteHessian
+  DEPENDS
+    ITK-ImageFilterBase
+    ITK-Smoothing
+  TEST_DEPENDS
+    ITK-TestKernel
+  DESCRIPTION
+    "${DOCUMENTATION}"
+)
