@@ -24,7 +24,7 @@ namespace Local
  * The additional feature added is the normalization across scale.
  *
  * \ingroup GradientFilters
- * \ingroup ITK-DiscreteHessian
+ * \ingroup ITKDiscreteHessian
  */
 template< typename TInputImage,
           typename TOutputImage = Image< SymmetricSecondRankTensor<
