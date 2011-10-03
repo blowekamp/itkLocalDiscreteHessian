@@ -30,7 +30,7 @@ namespace Local
  */
 template< typename TInputImage,
           typename TOutputImage = Image< SymmetricSecondRankTensor<
-                                           ITK_TYPENAME NumericTraits< ITK_TYPENAME TInputImage::PixelType >::RealType,
+                                           typename NumericTraits< typename TInputImage::PixelType >::RealType,
                                            ::itk::GetImageDimension< TInputImage >::ImageDimension >,
                                          ::itk::GetImageDimension< TInputImage >::ImageDimension > >
 class ITK_EXPORT HessianDiscreteGaussianImageFilter:
