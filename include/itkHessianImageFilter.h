@@ -83,7 +83,7 @@ private:
 
 
 #ifndef ITK_MANUAL_INSTANTIATION
-#include "itkHessianImageFilter.txx"
+#include "itkHessianImageFilter.hxx"
 #endif
 
 

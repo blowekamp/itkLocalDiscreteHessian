@@ -114,6 +114,6 @@ private:
 } // end namespace Local
 } // end namespace itk
 
-#include "itkHessianDiscreteGaussianImageFilter.txx"
+#include "itkHessianDiscreteGaussianImageFilter.hxx"
 
 #endif // __itkHessianDiscreteGaussianImageFilter_h

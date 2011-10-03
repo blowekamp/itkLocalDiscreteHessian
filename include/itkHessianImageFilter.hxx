@@ -1,5 +1,5 @@
-#ifndef __itkHessianImageFilter_txx
-#define __itkHessianImageFilter_txx
+#ifndef __itkHessianImageFilter_hxx
+#define __itkHessianImageFilter_hxx
 
 
 #include "itkHessianImageFilter.h"
@@ -179,4 +179,4 @@ HessianImageFilter<TInputImage,TOutputImage>
 } // end namespace Local
 } // end namespace itk
 
-#endif // __itkHessianImageFilter_txx
+#endif // __itkHessianImageFilter_hxx
