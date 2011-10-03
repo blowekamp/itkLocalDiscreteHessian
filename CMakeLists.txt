@@ -1,2 +1,2 @@
-project(ITK-LocalDiscreteHessian)
+project(ITKLocalDiscreteHessian)
 itk_module_impl()

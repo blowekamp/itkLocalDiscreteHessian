@@ -1,14 +1,14 @@
 itk_module_test()
-set(ITK-LocalDiscreteHessianTests
+set(ITKLocalDiscreteHessianTests
   itkDiscreteHessianHeaderTest.cxx
   itkHessianImageFilterTest.cxx
 )
 
-CreateTestDriver(ITK-LocalDiscreteHessian  "${ITK-LocalDiscreteHessian-Test_LIBRARIES}" "${ITK-LocalDiscreteHessianTests}")
+CreateTestDriver(ITKLocalDiscreteHessian  "${ITKLocalDiscreteHessian-Test_LIBRARIES}" "${ITKLocalDiscreteHessianTests}")
 
 add_test(NAME itkLocalDiscreteHessianHeaderTest
-      COMMAND ITK-LocalDiscreteHessianTestDriver itkDiscreteHessianHeaderTest)
+      COMMAND ITKLocalDiscreteHessianTestDriver itkDiscreteHessianHeaderTest)
 
 
 add_test(NAME itkLocalHessianImageFilterTest
-      COMMAND ITK-LocalDiscreteHessianTestDriver itkHessianImageFilterTest )
+      COMMAND ITKLocalDiscreteHessianTestDriver itkHessianImageFilterTest )

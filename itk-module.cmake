@@ -6,12 +6,12 @@
   file( READ "${MY_CURENT_DIR}" DOCUMENTATION )
 #endif ()
 
-itk_module(ITK-DiscreteHessian
+itk_module(ITKDiscreteHessian
   DEPENDS
-    ITK-ImageFilterBase
-    ITK-Smoothing
+    ITKImageFilterBase
+    ITKSmoothing
   TEST_DEPENDS
-    ITK-TestKernel
+    ITKTestKernel
   DESCRIPTION
     "${DOCUMENTATION}"
 )
