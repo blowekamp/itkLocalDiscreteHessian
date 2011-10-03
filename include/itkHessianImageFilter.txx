@@ -101,7 +101,6 @@ HessianImageFilter<TInputImage,TOutputImage>
   TOutputImage *output = this->GetOutput();
 
 
-  typedef TOutputImage                        OutputImageType;
   typedef typename OutputImageType::PixelType HessianType;
   ImageRegionIterator<OutputImageType> oit;
 
