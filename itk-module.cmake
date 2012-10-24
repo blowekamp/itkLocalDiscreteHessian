@@ -12,6 +12,7 @@ itk_module(ITKDiscreteHessian
     ITKSmoothing
   TEST_DEPENDS
     ITKTestKernel
+    ITKImageSources
   DESCRIPTION
     "${DOCUMENTATION}"
 )
