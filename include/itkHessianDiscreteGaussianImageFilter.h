@@ -31,8 +31,8 @@ namespace Local
 template< typename TInputImage,
           typename TOutputImage = Image< SymmetricSecondRankTensor<
                                            typename NumericTraits< typename TInputImage::PixelType >::RealType,
-                                           ::itk::GetImageDimension< TInputImage >::ImageDimension >,
-                                         ::itk::GetImageDimension< TInputImage >::ImageDimension > >
+                                           TInputImage::ImageDimension >,
+                                         TInputImage::ImageDimension > >
 class ITK_EXPORT HessianDiscreteGaussianImageFilter:
   public ImageToImageFilter< TInputImage, TOutputImage >
 {
@@ -49,8 +49,7 @@ public:
   typedef typename NumericTraits< PixelType >::RealType RealType;
 
   /** Image dimension. */
-  itkStaticConstMacro(ImageDimension, unsigned int,
-                      ::itk::GetImageDimension< TInputImage >::ImageDimension);
+  itkStaticConstMacro(ImageDimension, unsigned int, TInputImage::ImageDimension);
 
   /** Type of the output Image */
   typedef TOutputImage                                       OutputImageType;

@@ -21,8 +21,8 @@ namespace Local
 template <typename TInputImage,
           typename TOutputImage = Image< SymmetricSecondRankTensor<
             typename NumericTraits< typename TInputImage::PixelType >::RealType,
-            ::itk::GetImageDimension< TInputImage >::ImageDimension >,
-                                         ::itk::GetImageDimension< TInputImage >::ImageDimension > >
+                                           TInputImage::ImageDimension >,
+                                         TInputImage::ImageDimension > >
 class ITK_EXPORT HessianImageFilter :
     public ImageToImageFilter< TInputImage, TOutputImage>
 {

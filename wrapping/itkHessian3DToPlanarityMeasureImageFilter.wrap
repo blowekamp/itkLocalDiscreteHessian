@@ -1,8 +1,0 @@
-itk_wrap_class("itk::Hessian3DToPlanarityMeasureImageFilter" POINTER)
-  itk_wrap_filter_dims(d3 3)
-  if(d3)
-    foreach(t ${WRAP_ITK_SCALAR})
-      itk_wrap_template("${ITKM_${t}}" "${ITKT_${t}}")
-    endforeach(t)
-  endif(d3)
-itk_end_wrap_class()
